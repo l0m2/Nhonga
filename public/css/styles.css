@@ -1,0 +1,158 @@
+
+body {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+background-color: #f2f2f2;
+}
+
+header {
+background-color: #325050;
+color: #fff;
+padding: 10px;
+display: flex;
+align-items: center;
+}
+
+.logo {
+font-size: 36px;
+margin: 0;
+padding: 10px;
+background-color: #223a3a;
+color: #fff;
+border-radius: 5px;
+text-transform: uppercase;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+display: flex;
+justify-content: center;
+flex-grow: 1;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+nav li {
+display: inline-block;
+margin-right: 20px;
+position: relative;
+}
+
+nav li a {
+color: #fff;
+text-decoration: none;
+padding: 5px 10px;
+border-radius: 5px;
+transition: border-bottom 0.3s ease;
+border-bottom: 2px solid transparent;
+}
+
+nav li a:hover {
+border-bottom: 2px solid #1e3838;
+background-color:#1e3838;
+}
+
+nav li:hover ul {
+display: block;
+}
+
+nav ul ul {
+display: none;
+position: absolute;
+top: 100%;
+background-color: #325050;
+min-width: 150px;
+z-index: 1;
+border-radius: 5px;
+}
+
+nav ul ul li {
+display: block;
+margin: 5px 0;
+}
+
+nav ul ul li a {
+padding: 8px 15px;
+}
+
+.user-links {
+margin-left: auto;
+}
+
+.user-links a {
+color: #fff;
+text-decoration: none;
+padding: 5px 10px;
+margin-left: 10px;
+border-radius: 5px;
+border: 2px solid transparent;
+transition: border 0.3s ease;
+}
+
+.user-links a:hover {
+    border-bottom: 2px solid #1e3838;
+    background-color:#1e3838;
+}
+
+main {
+padding: 20px;
+background-color: #fff;
+color: #333;
+}
+
+footer {
+text-align: center;
+padding: 10px;
+background-color: #325050;
+color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+header {
+flex-direction: column;
+}
+.user-links {
+margin-top: 10px;
+flex-direction: column;
+align-items: flex-start;
+}
+.logo {
+margin-top: 20px;
+}
+nav {
+margin-top: 20px;
+}
+nav ul {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+nav li {
+margin-bottom: 10px;
+}
+nav li ul {
+display: none;
+}
+nav li:hover ul {
+display: block;
+}
+}
+
+
+/* para lojas */
+/* Estilos para a imagem de perfil */
+.perfil-imagem {
+    width: 50px; /* Largura desejada da imagem de perfil */
+    height: 50px; /* Altura desejada da imagem de perfil */
+    border-radius: 50%; /* Tornar a imagem circular (assumindo que a imagem seja quadrada) */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionar sombra à imagem */
+    border: 2px solid #ffffff; /* Adicionar uma borda branca à imagem */
+  }
+  
+
